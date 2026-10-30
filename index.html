@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Core Java Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-icon">☕</span>
+      <div><strong>CoreJava.practice</strong><small>topic-wise questions &amp; answers</small></div>
+    </div>
+    <a class="source-link" href="https://c4knowledgeseekers.in/practice/core-java-programming" target="_blank" rel="noreferrer">original reference ↗</a>
+  </header>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <input id="topicSearch" type="search" placeholder="Filter topics" aria-label="Search topics">
+      <nav id="topicList" aria-label="Java topics"></nav>
+    </div>
+  </div>
+
+  <main class="layout">
+
+    <section class="content">
+      <div class="welcome" id="welcome">
+        <div class="welcome-text">
+        <h1>Practise Java, one topic at a time.</h1>
+        <p>Choose a topic from the explorer to see its questions and reveal the solutions.</p>
+        <div class="welcome-tip"><strong>How to use:</strong> read the question, write your own answer first, then click <em>Show answer</em> to compare.</div>
+        </div>
+        <pre class="hero-code" aria-hidden="true"><span class="c">// Main.java</span>
+<span class="k">public class</span> <span class="t">Main</span> {
+    <span class="k">public static void</span> <span class="f">main</span>(String[] args) {
+        System.out.<span class="f">println</span>(<span class="s">"Hello, Core Java"</span>);
+    }
+}</pre>
+      </div>
+
+      <div id="practice" hidden>
+        <div class="content-top">
+          <div><h1 id="topicTitle"></h1><p id="topicDescription" class="muted"></p></div>
+          <span class="count-pill" id="questionCount"></span>
+        </div>
+        <div class="toolbar">
+          <input id="questionSearch" type="search" placeholder="Search questions in this topic" aria-label="Search questions">
+          <button id="showAll" class="button button-light">Show all answers</button>
+        </div>
+        <div id="questionList" class="question-list"></div>
+        <div class="pager">
+          <button id="prevTopic" class="button button-light">← Previous</button>
+          <span id="topicPosition"></span>
+          <button id="nextTopic" class="button button-primary">Next →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Core Java Practice</span><span>Student project: HTML, CSS &amp; JavaScript</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
